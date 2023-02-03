@@ -1,0 +1,43 @@
+<%- include("partials/header"); -%>
+<!-- TOP-CONTAINER -->
+<div class="main-conatainer row">
+    <div class="col-lg-6">
+        <h2>Mass-Mail </h2>
+        <h3>Dispatcher</h3>
+        <p class="description">Send mail to thousands of people at once</p>
+        <div class="procedure">
+            <div class="steps"> 
+                <img src="images/easy-1.png">
+                <p>Easy to use</p>
+            </div>
+            <div class="steps"> 
+                <img src="images/money.png">
+                <p>No subscription required</p>
+            </div>
+            <div class="steps"> 
+                <img src="images/mass-mail.jpg">
+                <p>Send mail to thousands of people</p>
+            </div> 
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <img class="mass-mail-img" src="images/img-1.jpg" />
+    </div>
+</div>
+
+<div class="t-2">
+    <img src="images/csv-1.png"/>
+    <h2>Step-1</h2>
+    <div class="upload-file"> 
+        <form method="post">
+        <label class="custom-file-upload">
+            <input type="file" name="csvFile" id="myFile" onChange="processFile()" accept=".csv"/>
+                Select file
+        </label>
+        <button type="submit" class="btn btn-primary btn-lg col-12">Upload</button>
+    </form>
+    </div>
+
+</div>
+
+<%- include("partials/footer"); -%>

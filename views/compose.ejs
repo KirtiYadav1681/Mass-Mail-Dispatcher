@@ -1,0 +1,20 @@
+<%- include("partials/header"); -%>
+<!-- BOTTOM-CONTAINER- COMPOSING E-MAIL -->
+<div class="compose-mail" type="submit">
+    <div class="step-2">
+        <h2>Step-2</h2>
+        <p>Compose your mail and Send</p>
+    </div>
+    <form class="email-form" method="post" action="/compose">
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" class="form-control" id="subject" placeholder="Write subject here...">
+        </div>
+        <div class="form-group">
+            <label for="body">Mail-Content</label>
+            <textarea class="form-control" id="body" name="content" rows="7" placeholder="Write mail-content here..."></textarea>
+        </div>
+          <button id="submit-btn" type="submit" class="btn btn-primary btn-lg col-12">Send Mail</button>
+    </form>
+</div>
+<%- include("partials/footer"); -%>
